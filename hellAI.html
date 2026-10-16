@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RENZ MEDICAL ENTERPRISES | AI SUPPORT</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+</head>
+<header class="header">
+
+    <div class="menu-container">
+
+    <button class="menu-toggle" aria-label="Open-menu">
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="menu-drop">
+        <nav class="menu-icons">
+    <span class="menu-icon" title="Services">⚒</span>
+    <span class="menu-icon" title="Equipment">⚙</span>
+    <span class="menu-icon" title="Support">﹖</span>
+          </nav>
+
+        <nav class="menu-labels">
+          <div class="menu-item">
+             <span class="menu-title">Services</span>
+               <div class="submenu">
+            <a href="repair.html">Repairs</a>
+            <a href="pms.html">PMS</a>
+            <a href="refurbish.html">Refurbish</a>
+          </div>
+          </div>
+         
+          <div class="menu-item">
+            <a href="equipment.html" class="menu-equip">Equipment</a>
+          </div>
+          
+          <div class="menu-item">
+            <a href="hellAI.html" class="menu-equip">AI Chat Support</a>
+          </div>
+            
+        </nav>
+
+    </div>
+</div>
+    <div class="logo">
+      <div class="logo-icon">
+        <img src="images/logo.png" alt="Renz Medical Logo">
+        </div>
+        <h2> 
+          <span class="renz">Renz Medical</span>
+          <span class="equip">Equipment</span>
+        </h2>
+    </div>
+   <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="nav-contact">Contact<span class="nav-preview"><span class="nav-preview-box"><strong>Contact Us</strong><span>Have a question about our services or equipment? Reach us by phone, Viber, Facebook or email, or send us a message.</span></span></span></a>
+    </nav>
+  </header>
+
+  <main class="chat-layout">
+      <div class="chat-wrapper">
+          
+          <!-- Chat Header -->
+          <div class="chat-header-bar">
+              <div class="chat-avatar-wrapper">
+                  <img src="images/RENEGADElogod.png" alt="Renz AI Assistant" class="chat-bot-img">
+              </div>
+              <div class="chat-title-info">
+                  <h3>Ren AI</h3>
+                  <p>ONLINE  |  Powered by AI</p>
+              </div>
+              <button id="clear-chat-btn" style="background: none; border: none; color: #8ED8E8; cursor: pointer; font-size: 12px; margin-left: auto;">Reset Chat</button>
+          </div>
+
+          <!-- Chat Messages Area -->
+          <div class="chat-messages" id="chat-messages">
+              
+              <!-- AI Greeting Bubble -->
+              <div class="message ai-message">
+                  <div class="message-content">Hi! I'm Ren, your Medical virtual assistant! Select an option below to get started or start typing your inquiry:</div>
+              </div>
+
+              <div class="suggestions-card">
+                  <div class="suggestions-header">
+                      <span class="question-icon">❔</span> You may want to ask:
+                  </div>
+                  <ul class="suggestions-list">
+                      <li class="suggestion-item">I need to request an equipment repair <span>&gt;</span></li>
+                      <li class="suggestion-item">I want to schedule preventive maintenance <span>&gt;</span></li>
+                      <li class="suggestion-item">I want to refurbish my equipment <span>&gt;</span></li>
+                      <li class="suggestion-item">Do you have a specific equipment in stock? <span>&gt;</span></li>
+                  </ul>
+              </div>
+          </div>
+
+          <!-- Input Area -->
+          <div class="chat-input-wrapper">
+              <input type="text" id="chat-input" placeholder="You may type your concern here..." autocomplete="off">
+              <button id="chat-send-btn" aria-label="Send Message">
+                  <!-- SVG Send Icon -->
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </button>
+          </div>
+          
+      </div>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>

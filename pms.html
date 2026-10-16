@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RENZ MEDICAL ENTERPRISES | PMS</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+<body class="service-page">
+  <header class="header">
+
+    <div class="menu-container">
+
+    <button class="menu-toggle" aria-label="Open-menu">
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="menu-drop">
+        <nav class="menu-icons">
+    <span class="menu-icon" title="Services">⚒</span>
+    <span class="menu-icon" title="Equipment">⚙</span>
+    <span class="menu-icon" title="Support">﹖</span>
+          </nav>
+
+        <nav class="menu-labels">
+          <div class="menu-item">
+             <span class="menu-title">Services</span>
+               <div class="submenu">
+            <a href="repair.html">Repairs</a>
+            <a href="pms.html">PMS</a>
+            <a href="refurbish.html">Refurbish</a>
+          </div>
+          </div>
+         
+          <div class="menu-item">
+            <a href="equipment.html" class="menu-equip">Equipment</a>
+          </div>
+          
+          <div class="menu-item">
+            <a href="hellAI.html" class="menu-equip">AI Chat Support</a>
+          </div>
+            
+        </nav>
+
+    </div>
+</div>
+    <div class="logo">
+      <div class="logo-icon">
+        <img src="images/logo.png" alt="Renz Medical Logo">
+        </div>
+        <h2> 
+          <span class="renz">Renz Medical</span>
+          <span class="equip">Equipment</span>
+        </h2>
+    </div>
+    <nav class="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="nav-contact">Contact<span class="nav-preview"><span class="nav-preview-box"><strong>Contact Us</strong><span>Have a question about our services or equipment? Reach us by phone, Viber, Facebook or email, or send us a message.</span></span></span></a>
+    </nav>
+  </header>
+   <main>
+        <section class="pms-section" id="pms">
+
+            <div class="pms-heading">
+                <p class="pms-label">CUSTOMER SUPPORT</p>
+                <h1>Preventive Maintenance Request</h1>
+                <p>
+                    Request maintenance for your medical equipment.
+                    Provide the details below so we can review your request.
+                </p>
+            </div>
+
+            <form class="pms-form">
+
+                <h2>Contact Information</h2>
+
+                <div class="pms-grid">
+                    <div class="pms-group">
+                        <label for="pms-name">Full Name *</label>
+                        <input type="text" id="pms-name"
+                               name="fullName"
+                               placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="pms-group">
+                        <label for="pms-facility">Hospital / Facility *</label>
+                        <input type="text" id="pms-facility"
+                               name="facility"
+                               placeholder="Facility name" required>
+                    </div>
+
+                    <div class="pms-group">
+                        <label for="pms-email">Email Address *</label>
+                        <input type="email" id="pms-email"
+                               name="email"
+                               placeholder="Email Address" required>
+                    </div>
+
+                    <div class="pms-group">
+                        <label for="pms-phone">Phone Number *</label>
+                        <input type="tel" id="pms-phone"
+                               name="phone"
+                               placeholder="Contact number" required>
+                    </div>
+                </div>
+
+                <div class="pms-divider"></div>
+
+                <h2>Equipment Information</h2>
+
+                <div class="pms-grid">
+                    <div class="pms-group">
+                        <label for="pms-equipment">Equipment Type *</label>
+                        <select id="pms-equipment"
+                                name="equipment" required>
+                            <option value="">Select equipment</option>
+                            <option value="Autoclave">Autoclave</option>
+                            <option value="Anesthesia Machine">Anesthesia Machine</option>
+                            <option value="OR Table">OR Table</option>
+                            <option value="Cardiac Monitor">Cardiac Monitor</option>
+                            <option value="Defibrillator">Defibrillator</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="pms-group">
+                        <label for="pms-model">Brand / Model</label>
+                        <input type="text" id="pms-model"
+                               name="model"
+                               placeholder="Enter if known">
+                    </div>
+
+                    <div class="pms-group">
+                        <label for="pms-quantity">Quantity *</label>
+                        <input type="number" id="pms-quantity"
+                               name="quantity"
+                               min="1" step="1"
+                               placeholder="Number of units" required>
+                    </div>
+
+                    <div class="pms-group">
+                        <label for="pms-location">Department / Location</label>
+                        <input type="text" id="pms-location"
+                               name="location"
+                               placeholder="Department or room">
+                    </div>
+
+                    <div class="pms-group">
+                        <label for="last-maintenance">Last Maintenance Date</label>
+                        <input type="date" id="last-maintenance"
+                               name="lastMaintenance">
+                    </div>
+                </div>
+
+                <div class="pms-divider"></div>
+
+                <h2>Maintenance Schedule</h2>
+
+                <div class="pms-group">
+                    <label for="preferred-date">
+                        Preferred Maintenance Date *
+                    </label>
+                    <input type="date" id="preferred-date"
+                           name="preferredDate" required>
+                    <small>
+                        Your preferred date is a request and will need confirmation.
+                    </small>
+                </div>
+
+                <div class="pms-group pms-notes">
+                    <label for="pms-details">Additional Details</label>
+                    <textarea id="pms-details" name="details"
+                              rows="5"
+                              placeholder="Enter any maintenance requirements or additional information..."></textarea>
+                </div>
+
+                <button type="submit" class="pms-submit">
+                    Submit Maintenance Request
+                </button>
+
+                <p class="pms-note">* Required fields</p>
+
+            </form>
+        </section>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

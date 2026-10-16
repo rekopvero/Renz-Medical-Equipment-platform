@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Equipment | Renz Medical Equipment</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+<body class="equip-page">
+  <header class="header">
+
+    <div class="menu-container">
+
+    <button class="menu-toggle" aria-label="Open-menu">
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="menu-drop">
+        <nav class="menu-icons">
+    <span class="menu-icon" title="Services">⚒</span>
+    <span class="menu-icon" title="Equipment">⚙</span>
+    <span class="menu-icon" title="Support">﹖</span>
+          </nav>
+
+        <nav class="menu-labels">
+          <div class="menu-item">
+             <span class="menu-title">Services</span>
+               <div class="submenu">
+            <a href="repair.html">Repairs</a>
+            <a href="pms.html">PMS</a>
+            <a href="refurbish.html">Refurbish</a>
+          </div>
+          </div>
+         
+          <div class="menu-item">
+            <a href="equipment.html" class="menu-equip">Equipment</a>
+          </div>
+          
+          <div class="menu-item">
+            <a href="hellAI.html" class="menu-equip">AI Chat Support</a>
+          </div>
+            
+        </nav>
+
+    </div>
+</div>
+    <div class="logo">
+      <div class="logo-icon">
+        <img src="images/logo.png" alt="Renz Medical Logo">
+        </div>
+        <h2> 
+          <span class="renz">Renz Medical</span>
+          <span class="equip">Equipment</span>
+        </h2>
+    </div>
+   <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="nav-contact">Contact<span class="nav-preview"><span class="nav-preview-box"><strong>Contact Us</strong><span>Have a question about our services or equipment? Reach us by phone, Viber, Facebook or email, or send us a message.</span></span></span></a>
+    </nav>
+  </header>
+<section class="equipment-section">
+
+        <div class="equipment-heading">
+            <h1>Medical Equipment</h1>
+            <p>Browse our equipment categories</p>
+        </div>
+
+        <div class="equipment-grid">
+
+          <a href="#" class="equipment-card" onclick="openModal(event)">
+         <div class="equipment-icon">♨</div>
+        <h3>Autoclave</h3>
+        </a>
+
+            <a href="#" class="equipment-card" onclick="openAnesthesiaModal(event)">
+                <div class="equipment-icon">✚</div>
+                <h3>Anesthesia Machines</h3>
+            </a>
+
+            <a href="#" class="equipment-card" onclick="openTableModal(event)">
+                <div class="equipment-icon">⚕</div>
+                <h3>OR Tables</h3>
+            </a>
+
+            <a href="#" class="equipment-card" onclick="openCardiacModal(event)">
+                <div class="equipment-icon">▣</div>
+                <h3>Cardiac Monitors</h3>
+            </a>
+
+            <a href="#" class="equipment-card" onclick="openDefibModal(event)">
+                <div class="equipment-icon">♡</div>
+                <h3>Defibrillators</h3>
+            </a>
+
+            <a href="request-equipment.html" class="equipment-card">
+                <div class="equipment-icon">⚙</div>
+                <h3>Request an Equipment..</h3>
+            </a>
+        </div>
+       
+<!-- AUTOCLAVE MODAL -->
+<div id="autoclaveModal" class="modal">
+
+    <div class="modal-content"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="autoclaveTitle"
+         onclick="event.stopPropagation()">
+
+        <!-- CLOSE BUTTON -->
+        <button type="button"
+                class="close-btn"
+                onclick="closeModal()"
+                aria-label="Close modal">
+            &times;
+        </button>
+
+        <!-- MODAL HEADER -->
+        <div class="modal-header">
+            <div>
+                <h2 id="autoclaveTitle">Autoclaves</h2>
+
+                <p>
+                    Steam sterilizers for safe and effective
+                    infection control.
+                </p>
+            </div>
+        </div>
+
+        <!-- MODAL BODY -->
+        <div class="modal-body">
+
+            <!-- PRODUCT IMAGE -->
+            <div class="modal-product-image">
+                <img id="autoclaveImage"
+                     src="images/autoclave.png"
+                     alt="Autoclave sterilizer">
+                 <img id="autoclaveImage2"
+                     src="images/autoclave-2.png"
+                     alt="Class B Autoclave"
+                    style="display: none;">
+            </div>
+
+            <!-- PRODUCT DETAILS -->
+            <div class="modal-details">
+
+                <h3 id="autoclaveModel">
+                    Class A Autoclave
+                </h3>
+
+                <span class="equipment-tag">
+                    Medical and Laboratory Equipment
+                </span>
+
+                <p id="autoclaveDescription"
+                   class="modal-description">
+                    A device that uses pressurized saturated steam
+                    to sterilize reusable instruments, laboratory
+                    glassware, and other compatible materials.
+                </p>
+
+                <!-- FEATURES -->
+                <div class="modal-features">
+
+                    <div class="feature-item">
+                        <span class="feature-check">✓</span>
+
+                        <div>
+                            <h4>QUALITY EQUIPMENT</h4>
+                            <p>Trusted and reliable options</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-check">✓</span>
+
+                        <div>
+                            <h4>EXPERT SUPPORT</h4>
+                            <p>Maintenance, repair, and service</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-check">✓</span>
+
+                        <div>
+                            <h4>CUSTOM SOLUTIONS</h4>
+                            <p>Support for your facility's needs</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- VIEW DETAILS BUTTON -->
+                <div class="modal-actions">
+                   <a id="autoclaveDetailsLink"
+                     href="view-details.html?item=autoclave-a"
+                     class="view-details-btn">
+                    VIEW DETAILS &gt;
+                        </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PREVIOUS BUTTON -->
+        <button type="button"
+                class="slide-arrow slide-prev"
+                onclick="changeAutoclave(-1)"
+                aria-label="Previous autoclave">
+            &#10094;
+        </button>
+
+        <!-- NEXT BUTTON -->
+        <button type="button"
+                class="slide-arrow slide-next"
+                onclick="changeAutoclave(1)"
+                aria-label="Next autoclave">
+            &#10095;
+        </button>
+
+    </div>
+</div>
+<!-- END AUTOCLAVE MODAL -->
+
+<!-- ANESTHESIA MACHINE MODAL -->
+<div id="anesthesiaModal" class="modal">
+
+    <div class="modal-content"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="anesthesiaTitle"
+         onclick="event.stopPropagation()">
+
+        <!-- CLOSE BUTTON -->
+        <button type="button"
+                class="close-btn"
+                onclick="closeAnesthesiaModal()"
+                aria-label="Close modal">
+            &times;
+        </button>
+
+        <!-- MODAL HEADER -->
+        <div class="modal-header">
+            <div>
+                <h2 id="anesthesiaTitle">Anesthesia Machines</h2>
+
+                <p>
+                    Equipment designed to support anesthesia
+                    delivery during medical procedures.
+                </p>
+            </div>
+        </div>
+
+        <!-- MODAL BODY -->
+        <div class="modal-body">
+
+            <!-- PRODUCT IMAGE -->
+            <div class="modal-product-image">
+                <img id="anesthesia-1"
+                     src="images/anesthesia-1.png"
+                     alt="Anesthesia machine">
+                <img id="anesthesia-2"
+                    src="images/anesthesia-2.png"
+                    style="display: none;">
+                </div>
+
+            <!-- PRODUCT DETAILS -->
+            <div class="modal-details">
+
+                <h3 id="anesthesiaModel">
+                    Anesthesia Machine Model A
+                </h3>
+
+                <span class="equipment-tag">
+                    Medical Equipment
+                </span>
+
+                <p id="anesthesiaDescription"
+                   class="modal-description">
+                    An anesthesia machine is used by trained
+                    healthcare professionals to deliver and
+                    manage anesthetic gases during medical
+                    procedures.
+                </p>
+
+                <!-- FEATURES -->
+                <div class="modal-features">
+
+                    <div class="feature-item">
+                        <span class="feature-check">✓</span>
+
+                        <div>
+                            <h4>QUALITY EQUIPMENT</h4>
+                            <p>Reliable equipment options</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-check">✓</span>
+
+                        <div>
+                            <h4>EXPERT SUPPORT</h4>
+                            <p>Maintenance, repair, and service</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-check">✓</span>
+
+                        <div>
+                            <h4>CUSTOM SOLUTIONS</h4>
+                            <p>Support for your facility's needs</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- VIEW DETAILS BUTTON -->
+                <div class="modal-actions">
+                    <a id="anesthesiaDetailsLink"
+   href="view-details.html?item=anesthesia-a"
+   class="view-details-btn">
+    VIEW DETAILS &gt;
+</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PREVIOUS BUTTON -->
+        <button type="button"
+                class="slide-arrow slide-prev"
+                onclick="changeAnesthesia(-1)"
+                aria-label="Previous anesthesia machine">
+            &#10094;
+        </button>
+
+        <!-- NEXT BUTTON -->
+        <button type="button"
+                class="slide-arrow slide-next"
+                onclick="changeAnesthesia(1)"
+                aria-label="Next anesthesia machine">
+            &#10095;
+        </button>
+
+    </div>
+</div>
+<!-- END OF ANESTHESIA -->
+
+<!-- OR TABLE MODAL -->
+<div id="tableModal" class="modal">
+
+    <div class="modal-content"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="tableTitle"
+         onclick="event.stopPropagation()">
+
+        <!-- CLOSE BUTTON -->
+        <button type="button"
+                class="close-btn"
+                onclick="closeTableModal()"
+                aria-label="Close modal">
+            &times;
+        </button>
+
+        <!-- MODAL HEADER -->
+        <div class="modal-header">
+            <div>
+                <h2 id="tableTitle">Operating Room Tables</h2>
+
+                <p>
+                    Equipment designed to support patient
+                    positioning during surgical procedures.
+                </p>
+            </div>
+        </div>
+
+        <!-- MODAL BODY -->
+        <div class="modal-body">
+
+            <!-- PRODUCT IMAGE -->
+
+        <div class="modal-product-image">
+     <img id="tableImage"
+         src="images/table-1.png"
+         alt="OR Table Model A">
+        </div>
+            <!-- PRODUCT DETAILS -->
+            <div class="modal-details">
+
+                <h3 id="tableModel">OR Table Model A</h3>
+
+                <span class="equipment-tag">
+                    Medical Equipment
+                </span>
+
+                <p id="tableDescription"
+                   class="modal-description">
+                    An operating room table designed to support
+                    patient positioning during surgical procedures.
+                </p>
+
+                <!-- FEATURES -->
+                <div class="modal-features">
+
+                    <div class="feature-item">
+                        <span class="feature-check">✓</span>
+                        <div>
+                            <h4>QUALITY EQUIPMENT</h4>
+                            <p>Reliable equipment options</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-check">✓</span>
+                        <div>
+                            <h4>EXPERT SUPPORT</h4>
+                            <p>Maintenance, repair, and service</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-check">✓</span>
+                        <div>
+                            <h4>CUSTOM SOLUTIONS</h4>
+                            <p>Support for your facility's needs</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- VIEW DETAILS BUTTON -->
+                <div class="modal-actions">
+                    <a id="tableDetailsLink"
+                href="view-details.html?item=table-a"
+                class="view-details-btn">
+                 VIEW DETAILS &gt;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PREVIOUS BUTTON -->
+        <button type="button"
+                class="slide-arrow slide-prev"
+                onclick="changeTable(-1)"
+                aria-label="Previous OR table">
+            &#10094;
+        </button>
+
+        <!-- NEXT BUTTON -->
+        <button type="button"
+                class="slide-arrow slide-next"
+                onclick="changeTable(1)"
+                aria-label="Next OR table">
+            &#10095;
+        </button>
+
+    </div>
+</div>
+<!-- END OF OR TABLE -->
+
+<!-- CARDIAC MONITOR MODAL -->
+<div id="cardiacModal" class="modal">
+
+    <div class="modal-content"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="cardiacTitle"
+         onclick="event.stopPropagation()">
+
+        <!-- CLOSE BUTTON -->
+        <button type="button"
+                class="close-btn"
+                onclick="closeCardiacModal()"
+                aria-label="Close modal">
+            &times;
+        </button>
+
+        <!-- MODAL HEADER -->
+        <div class="modal-header">
+            <div>
+                <h2 id="cardiacTitle">Cardiac Monitors</h2>
+
+                <p>
+                    Equipment designed to monitor heart activity
+                    and other vital signs.
+                </p>
+            </div>
+        </div>
+
+        <!-- MODAL BODY -->
+        <div class="modal-body">
+
+            <!-- PRODUCT IMAGE -->
+            <div class="modal-product-image">
+                <img id="cardiacImage"
+                     src="images/cardiac-1.png"
+                     alt="Cardiac Monitor Model A">
+            </div>
+
+            <!-- PRODUCT DETAILS -->
+            <div class="modal-details">
+
+                <h3 id="cardiacModel">
+                    Cardiac Monitor Model A
+                </h3>
+
+                <span class="equipment-tag">
+                    Medical Equipment
+                </span>
+
+                <p id="cardiacDescription"
+                   class="modal-description">
+                    A medical monitoring device used by healthcare
+                    professionals to observe a patient's heart rate
+                    and other vital signs.
+                </p>
+
+                <!-- FEATURES -->
+                <div class="modal-features">
+
+                    <div class="feature-item">
+                        <span class="feature-check">✓</span>
+                        <div>
+                            <h4>QUALITY EQUIPMENT</h4>
+                            <p>Reliable equipment options</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-check">✓</span>
+                        <div>
+                            <h4>EXPERT SUPPORT</h4>
+                            <p>Maintenance, repair, and service</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-check">✓</span>
+                        <div>
+                            <h4>CUSTOM SOLUTIONS</h4>
+                            <p>Support for your facility's needs</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- VIEW DETAILS BUTTON -->
+                <div class="modal-actions">
+                    <a id="cardiacDetailsLink"
+                    href="view-details.html?item=cardiac-a"
+                     class="view-details-btn">
+                    VIEW DETAILS &gt;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PREVIOUS BUTTON -->
+        <button type="button"
+                class="slide-arrow slide-prev"
+                onclick="changeCardiac(-1)"
+                aria-label="Previous cardiac monitor">
+            &#10094;
+        </button>
+
+        <!-- NEXT BUTTON -->
+        <button type="button"
+                class="slide-arrow slide-next"
+                onclick="changeCardiac(1)"
+                aria-label="Next cardiac monitor">
+            &#10095;
+        </button>
+
+    </div>
+</div>
+<!-- END OF CARDIAC -->
+ <!-- DEFIBRILLATOR MODAL -->
+<div id="defibModal" class="modal">
+
+    <div class="modal-content"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="defibTitle"
+         onclick="event.stopPropagation()">
+
+        <!-- CLOSE BUTTON -->
+        <button type="button"
+                class="close-btn"
+                onclick="closeDefibModal()"
+                aria-label="Close modal">
+            &times;
+        </button>
+
+        <!-- MODAL HEADER -->
+        <div class="modal-header">
+            <div>
+                <h2 id="defibTitle">Defibrillators</h2>
+
+                <p>
+                    Equipment used in emergency cardiac care.
+                </p>
+            </div>
+        </div>
+
+        <!-- MODAL BODY -->
+        <div class="modal-body">
+
+            <!-- PRODUCT IMAGE -->
+            <div class="modal-product-image">
+                <img id="defibImage"
+                     src="images/defib-1.png"
+                     alt="Defibrillator Model A">
+            </div>
+
+            <!-- PRODUCT DETAILS -->
+            <div class="modal-details">
+
+                <h3 id="defibModel">Defibrillator Model A</h3>
+
+                <span class="equipment-tag">
+                    Medical Equipment
+                </span>
+
+                <p id="defibDescription"
+                   class="modal-description">
+                    A medical device used by trained healthcare
+                    professionals to help treat certain
+                    life-threatening heart rhythm problems.
+                </p>
+
+                <!-- FEATURES -->
+                <div class="modal-features">
+
+                    <div class="feature-item">
+                        <span class="feature-check">✓</span>
+                        <div>
+                            <h4>QUALITY EQUIPMENT</h4>
+                            <p>Reliable equipment options</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-check">✓</span>
+                        <div>
+                            <h4>EXPERT SUPPORT</h4>
+                            <p>Maintenance, repair, and service</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-check">✓</span>
+                        <div>
+                            <h4>CUSTOM SOLUTIONS</h4>
+                            <p>Support for your facility's needs</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- VIEW DETAILS BUTTON -->
+                <div class="modal-actions">
+                   <a id="defibDetailsLink"
+                     href="view-details.html?item=defibrillator-a"
+                 class="view-details-btn">
+                    VIEW DETAILS &gt;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PREVIOUS BUTTON -->
+        <button type="button"
+                class="slide-arrow slide-prev"
+                onclick="changeDefib(-1)"
+                aria-label="Previous defibrillator">
+            &#10094;
+        </button>
+
+        <!-- NEXT BUTTON -->
+        <button type="button"
+                class="slide-arrow slide-next"
+                onclick="changeDefib(1)"
+                aria-label="Next defibrillator">
+            &#10095;
+        </button>
+
+    </div>
+</div>
+<!-- END OF DEFIB -->
+</section>
+<script src="script.js"></script>
+</body>
+</html>

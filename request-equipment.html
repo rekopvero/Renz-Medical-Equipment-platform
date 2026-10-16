@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RENZ MEDICAL ENTERPRISES | REQUEST EQUIPMENT</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+<body class="service-page">
+  <header class="header">
+
+    <div class="menu-container">
+
+    <button class="menu-toggle" aria-label="Open-menu">
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="menu-drop">
+        <nav class="menu-icons">
+    <span class="menu-icon" title="Services">⚒</span>
+    <span class="menu-icon" title="Equipment">⚙</span>
+    <span class="menu-icon" title="Support">﹖</span>
+          </nav>
+
+        <nav class="menu-labels">
+          <div class="menu-item">
+             <span class="menu-title">Services</span>
+               <div class="submenu">
+            <a href="repair.html">Repairs</a>
+            <a href="pms.html">PMS</a>
+            <a href="refurbish.html">Refurbish</a>
+          </div>
+          </div>
+
+          <div class="menu-item">
+            <a href="equipment.html" class="menu-equip">Equipment</a>
+          </div>
+
+          <div class="menu-item">
+            <a href="hellAI.html" class="menu-equip">AI Chat Support</a>
+          </div>
+          </div>
+
+        </nav>
+
+    </div>
+</div>
+    <div class="logo">
+      <div class="logo-icon">
+        <img src="images/logo.png" alt="Renz Medical Logo">
+        </div>
+        <h2>
+          <span class="renz">Renz Medical</span>
+          <span class="equip">Equipment</span>
+        </h2>
+    </div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="nav-contact">Contact<span class="nav-preview"><span class="nav-preview-box"><strong>Contact Us</strong><span>Have a question about our services or equipment? Reach us by phone, Viber, Facebook or email, or send us a message.</span></span></span></a>
+    </nav>
+  </header>
+
+    <main>
+        <main>
+    <div class="request-back-wrap">
+        <a href="equipment.html" class="request-back-link">
+            &larr; Back to Equipment
+        </a>
+    </div>
+
+        <section class="request-section" id="request-equipment">
+
+            <div class="request-heading">
+                <h1>Request an Equipment</h1>
+                <p>
+                    Looking for a specific medical equipment? Tell us what
+                    you need and we'll get back to you with available options.
+                </p>
+            </div>
+
+            <form class="request-form">
+
+                <h2>Contact Information</h2>
+
+                <div class="request-grid">
+                    <div class="request-group">
+                        <label for="req-name">Full Name *</label>
+                        <input type="text" id="req-name"
+                               name="fullName"
+                               placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="request-group">
+                        <label for="req-facility">Hospital / Facility *</label>
+                        <input type="text" id="req-facility"
+                               name="facility"
+                               placeholder="Facility name" required>
+                    </div>
+
+                    <div class="request-group">
+                        <label for="req-email">Email Address *</label>
+                        <input type="email" id="req-email"
+                               name="email"
+                               placeholder="Email Address" required>
+                    </div>
+
+                    <div class="request-group">
+                        <label for="req-phone">Phone Number *</label>
+                        <input type="tel" id="req-phone"
+                               name="phone"
+                               placeholder="Contact number" required>
+                    </div>
+                </div>
+
+                <div class="request-divider"></div>
+
+                <h2>Requested Equipment</h2>
+
+                <div class="request-grid">
+                    <div class="request-group">
+                        <label for="req-category">Equipment Type / Category *</label>
+                        <select id="req-category"
+                                name="equipmentCategory" required>
+                            <option value="">Select category</option>
+                            <option value="Autoclave">Autoclave</option>
+                            <option value="Anesthesia Machine">Anesthesia Machine</option>
+                            <option value="OR Table">OR Table</option>
+                            <option value="Cardiac Monitor">Cardiac Monitor</option>
+                            <option value="Defibrillator">Defibrillator</option>
+                            <option value="Other">Others</option>
+                        </select>
+                    </div>
+
+                    <div class="request-group">
+                        <label for="req-equipment-name">Equipment Name / Specific Model *</label>
+                        <input type="text" id="req-equipment-name"
+                               name="equipmentName"
+                               placeholder='e.g., "Infusion Pump", "X-Ray Machine"'
+                               required>
+                    </div>
+
+                    <div class="request-group">
+                        <label for="req-brand">Brand Preference</label>
+                        <input type="text" id="req-brand"
+                               name="brandPreference"
+                               placeholder="e.g., Philips, GE, Mindray">
+                    </div>
+
+                    <div class="request-group">
+                        <label for="req-quantity">Quantity Needed *</label>
+                        <input type="number" id="req-quantity"
+                               name="quantity" min="1" step="1"
+                               placeholder="Number of units" required>
+                    </div>
+
+                    <div class="request-group">
+                        <label for="req-condition">Condition Preferred *</label>
+                        <select id="req-condition"
+                                name="condition" required>
+                            <option value="Brand New">Brand New</option>
+                            <option value="Refurbished">Refurbished</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="request-divider"></div>
+
+                <h2>Requirements &amp; Timeline</h2>
+
+                <div class="request-group">
+                    <label for="req-purpose">Intended Use / Purpose *</label>
+                    <textarea id="req-purpose" name="intendedUse"
+                              rows="4"
+                              placeholder='e.g., "for ICU", "for operating room", "for laboratory"'
+                              required></textarea>
+                </div>
+
+                <div class="request-group request-notes">
+                    <label for="req-target-date">Target Date Needed</label>
+                    <input type="date" id="req-target-date"
+                           name="targetDate">
+                    <small>
+                        Optional. Let us know when you would need the
+                        equipment so we can check availability.
+                    </small>
+                </div>
+
+                <button type="submit" class="request-submit">
+                    Submit Equipment Request
+                </button>
+
+                <p class="request-note">* Required fields</p>
+
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        const equipForm = document.querySelector(".request-form");
+        if (equipForm) {
+            equipForm.addEventListener("submit", async function(e) {
+                e.preventDefault(); 
+                
+                const submitBtn = equipForm.querySelector(".request-submit");
+                const originalText = submitBtn.textContent;
+                submitBtn.disabled = true;
+                submitBtn.textContent = "Sending...";
+
+                const fd = new FormData();
+                
+                const purpose = document.getElementById("req-purpose").value;
+                const brand = document.getElementById("req-brand").value;
+
+                fd.append("request_type", "Equipment Request"); 
+                fd.append("full_name", document.getElementById("req-name").value);
+                fd.append("facility", document.getElementById("req-facility").value);
+                fd.append("email", document.getElementById("req-email").value);
+                fd.append("phone", document.getElementById("req-phone").value);
+                fd.append("equipment_type", document.getElementById("req-category").value);
+                fd.append("equipment_model", document.getElementById("req-equipment-name").value);
+                fd.append("quantity", document.getElementById("req-quantity").value);
+                fd.append("condition_status", document.getElementById("req-condition").value);
+                fd.append("preferred_date", document.getElementById("req-target-date").value);
+                fd.append("description", `PURPOSE: ${purpose}\nBRAND PREF: ${brand}`);
+
+                try {
+                    const response = await fetch("http://localhost:8000/api/services", {
+                        method: "POST",
+                        body: fd
+                    });
+
+                    if (response.ok) {
+                        // Premium UI Popup!
+                        showSuccessPopup("Equipment request submitted! We will check our availability and get back to you shortly.");
+                        equipForm.reset(); 
+                    } else {
+                        alert("Something went wrong. Please check your inputs and try again.");
+                    }
+                } catch (error) {
+                    console.error("Error submitting form:", error);
+                    alert("Failed to connect to the server.");
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalText;
+                }
+            });
+        }
+    </script>
+  </body>
+</html>

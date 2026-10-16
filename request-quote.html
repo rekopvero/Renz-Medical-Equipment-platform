@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REQUEST A QUOTE | Renz Medical Equipment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="service-page">
+<header class="header">
+
+    <div class="menu-container">
+
+    <button class="menu-toggle" aria-label="Open-menu">
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="menu-drop">
+        <nav class="menu-icons">
+    <span class="menu-icon" title="Services">⚒</span>
+    <span class="menu-icon" title="Equipment">⚙</span>
+    <span class="menu-icon" title="Support">﹖</span>
+          </nav>
+
+        <nav class="menu-labels">
+          <div class="menu-item">
+             <span class="menu-title">Services</span>
+               <div class="submenu">
+            <a href="repair.html">Repairs</a>
+            <a href="pms.html">PMS</a>
+            <a href="refurbish.html">Refurbish</a>
+          </div>
+          </div>
+
+          <div class="menu-item">
+            <a href="equipment.html" class="menu-equip">Equipment</a>
+          </div>
+
+          <div class="menu-item">
+            <a href="hellAI.html" class="menu-equip">AI Chat Support</a>
+          </div>
+        </nav>
+
+    </div>
+</div>
+    <div class="logo">
+      <div class="logo-icon">
+        <img src="images/logo.png" alt="Renz Medical Logo">
+        </div>
+        <h2>
+          <span class="renz">Renz Medical</span>
+          <span class="equip">Equipment</span>
+        </h2>
+    </div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="nav-contact">Contact<span class="nav-preview"><span class="nav-preview-box"><strong>Contact Us</strong><span>Have a question about our services or equipment? Reach us by phone, Viber, Facebook or email, or send us a message.</span></span></span></a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="request-back-wrap">
+      <a href="equipment.html" class="request-back-link" id="quote-back-link">&larr; Back to Equipment</a>
+    </div>
+
+    <section class="request-section" id="request-quote">
+
+      <div class="request-heading">
+        <h1>Request a Quote</h1>
+        <p>
+          Tell us about the equipment you are interested in and we will send
+          you a quotation.
+        </p>
+      </div>
+
+      <form class="request-form" id="quote-form">
+
+        <h2>Contact Information</h2>
+
+        <div class="request-grid">
+          <div class="request-group">
+            <label for="quote-name">Full Name *</label>
+            <input type="text" id="quote-name" name="fullName" placeholder="Enter your name" required>
+          </div>
+
+          <div class="request-group">
+            <label for="quote-facility">Hospital / Facility *</label>
+            <input type="text" id="quote-facility" name="facility" placeholder="Facility name" required>
+          </div>
+
+          <div class="request-group">
+            <label for="quote-email">Email Address *</label>
+            <input type="email" id="quote-email" name="email" placeholder="Email Address" required>
+          </div>
+
+          <div class="request-group">
+            <label for="quote-phone">Phone Number *</label>
+            <input type="tel" id="quote-phone" name="phone" placeholder="Contact number" required>
+          </div>
+        </div>
+
+        <div class="request-divider"></div>
+
+        <h2>Equipment</h2>
+
+        <div class="request-grid">
+          <div class="request-group">
+            <label for="quote-category">Equipment Type / Category *</label>
+            <select id="quote-category" name="equipmentCategory" required>
+              <option value="">Select category</option>
+              <option value="Autoclave">Autoclave</option>
+              <option value="Anesthesia Machine">Anesthesia Machine</option>
+              <option value="OR Table">OR Table</option>
+              <option value="Cardiac Monitor">Cardiac Monitor</option>
+              <option value="Defibrillator">Defibrillator</option>
+              <option value="Other">Others</option>
+            </select>
+          </div>
+
+          <div class="request-group">
+            <label for="quote-model">Equipment / Model *</label>
+            <input type="text" id="quote-model" name="equipmentModel"
+                   placeholder='e.g., "Autoclave Model A"' required>
+          </div>
+
+          <div class="request-group">
+            <label for="quote-quantity">Quantity *</label>
+            <input type="number" id="quote-quantity" name="quantity" min="1" step="1" value="1" required>
+          </div>
+
+          <div class="request-group">
+            <label for="quote-condition">Condition Preferred *</label>
+            <select id="quote-condition" name="condition" required>
+              <option value="Brand New">Brand New</option>
+              <option value="Refurbished">Refurbished</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="request-divider"></div>
+
+        <h2>Delivery &amp; Notes</h2>
+
+        <div class="request-grid">
+          <div class="request-group">
+            <label for="quote-location">Delivery Location *</label>
+            <input type="text" id="quote-location" name="location" placeholder="City / Province" required>
+          </div>
+
+          <div class="request-group">
+            <label for="quote-date">Target Date Needed</label>
+            <input type="date" id="quote-date" name="targetDate">
+          </div>
+        </div>
+
+        <div class="request-group request-notes">
+          <label for="quote-notes">Additional Notes</label>
+          <textarea id="quote-notes" name="notes" rows="4"
+                    placeholder="Accessories, installation, financing, or other requirements"></textarea>
+          <small>Optional. Anything else we should know to prepare your quotation.</small>
+        </div>
+
+        <button type="submit" class="request-submit">Submit Quote Request</button>
+        <p class="request-note">* Required fields</p>
+      </form>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+  <script>
+    async function sendToBackend(formData, formEl, btn, okMsg) {
+      const original = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = "Sending...";
+      try {
+        const res = await fetch("http://localhost:8000/api/services", { method: "POST", body: formData });
+        if (res.ok) {
+          alert(okMsg);
+          formEl.reset();
+        } else {
+          alert("Something went wrong. Please check your inputs and try again.");
+        }
+      } catch (err) {
+        console.error("Error submitting form:", err);
+        alert("Failed to connect to the server.");
+      } finally {
+        btn.disabled = false;
+        btn.textContent = original;
+      }
+    }
+
+    
+    const QUOTE_ITEMS = {
+      "autoclave-a":     { title: "Autoclave Model A",          category: "Autoclave" },
+      "autoclave-b":     { title: "Autoclave Model B",          category: "Autoclave" },
+      "anesthesia-a":    { title: "Anesthesia Machine Model A", category: "Anesthesia Machine" },
+      "anesthesia-b":    { title: "Anesthesia Machine Model B", category: "Anesthesia Machine" },
+      "table-a":         { title: "Operating Room Table Model A", category: "OR Table" },
+      "table-b":         { title: "Operating Room Table Model B", category: "OR Table" },
+      "cardiac-a":       { title: "Cardiac Monitor Model A",    category: "Cardiac Monitor" },
+      "cardiac-b":       { title: "Cardiac Monitor Model B",    category: "Cardiac Monitor" },
+      "defibrillator-a": { title: "Defibrillator Model A",      category: "Defibrillator" },
+      "defibrillator-b": { title: "Defibrillator Model B",      category: "Defibrillator" }
+    };
+
+    const itemKey = new URLSearchParams(window.location.search).get("item");
+    const picked = QUOTE_ITEMS[itemKey];
+    if (picked) {
+      document.getElementById("quote-model").value = picked.title;
+      document.getElementById("quote-category").value = picked.category;
+      document.getElementById("quote-back-link").href = "view-details.html?item=" + itemKey;
+      document.getElementById("quote-back-link").innerHTML = "&larr; Back to Product";
+    }
+
+    const quoteForm = document.getElementById("quote-form");
+    quoteForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      
+      const submitBtn = quoteForm.querySelector(".request-submit");
+      const originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Processing...";
+
+      const fd = new FormData();
+      const notes = document.getElementById("quote-notes").value.trim();
+      const model = document.getElementById("quote-model").value;
+      const quantity = document.getElementById("quote-quantity").value;
+      const condition = document.getElementById("quote-condition").value;
+      const facility = document.getElementById("quote-facility").value;
+
+      fd.append("request_type", "Quote");
+      fd.append("full_name", document.getElementById("quote-name").value);
+      fd.append("facility", facility);
+      fd.append("email", document.getElementById("quote-email").value);
+      fd.append("phone", document.getElementById("quote-phone").value);
+      fd.append("equipment_type", document.getElementById("quote-category").value);
+      fd.append("equipment_model", model);
+      fd.append("quantity", quantity);
+      fd.append("location", document.getElementById("quote-location").value);
+      fd.append("condition_status", condition);
+      fd.append("preferred_date", document.getElementById("quote-date").value);
+      fd.append("description", notes ? `QUOTE NOTES: ${notes}` : "Quote request (no additional notes)");
+
+      try {
+        // 1. Send to Admin Database
+        const res = await fetch("http://localhost:8000/api/services", { method: "POST", body: fd });
+        
+        if (res.ok) {
+            // APPEARS the UI choice box
+            showChoicePopup(
+                "Request Saved!",
+                "Your official quote request has been securely sent to our team. Would you like a live pricing estimation from Ren AI right now?",
+                "Yes, Ask Ren AI",
+                "No, just close",
+                () => {
+                    // This runs if they click YES
+                    const aiPrompt = `Hi Ren! I just submitted a quote request for ${quantity}x ${condition} ${model} for ${facility}. Can you give me an estimation or details on this equipment?`;
+                    sessionStorage.setItem("pendingAiQuote", aiPrompt);
+                    window.location.href = "hellAI.html";
+                },
+                () => {
+                    // This runs if they click NO
+                    showSuccessPopup("Quote request submitted! Our team will send your quotation soon.");
+                    quoteForm.reset();
+                }
+            );
+        } else {
+            alert("Something went wrong. Please check your inputs and try again.");
+        }
+
+      } catch (err) {
+        console.error("Error submitting form:", err);
+        alert("Failed to connect to the server.");
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      }
+    });
+  </script>
+</body>
+</html>
