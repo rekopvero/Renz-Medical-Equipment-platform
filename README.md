@@ -7,9 +7,9 @@ An enterprise-grade, AI-integrated web platform built for Renz Medical Enterpris
 ## ✨ Features
 
 - **🤖 AI Assistant ("Ren")**: Integrates with NVIDIA deepseek-v4.1-flash to provide live pricing estimations, explain medical equipment specifications, and automatically collect structured service requests.
-- ** Service Request System**: Specialized workflows for **Repair**, **Preventive Maintenance Service (PMS)**, and **Refurbishment** with image upload support.
-- ** Equipment & Quote Requests**: Dynamic forms that capture custom customer requirements and route them directly to the admin backend.
-- ** Custom Branded UI**: Unified modal dialog system replacing browser alerts for a polished, professional client experience.
+- **Service Request System**: Specialized workflows for **Repair**, **Preventive Maintenance Service (PMS)**, and **Refurbishment** with image upload support.
+- **Equipment & Quote Requests**: Dynamic forms that capture custom customer requirements and route them directly to the admin backend.
+- **Custom Branded UI**: Unified modal dialog system replacing browser alerts for a polished, professional client experience.
 - **🛠️ SQLAdmin Dashboard**: Admin panel with static filtering by request types (`Message`, `Quote`, `Equipment Request`, `Repair`, `PMS`, `Refurbish`).
 
 ---
